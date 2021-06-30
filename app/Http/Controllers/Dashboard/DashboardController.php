@@ -129,7 +129,7 @@ class DashboardController extends Controller
     public function edit($id)
     {
         $staff = App\Staff::find($id);
-        return redirect('dashboard/staff')->with('staff', $staff);
+        return view('dashboard.user.edit')->with('staff', $staff);
     }
 
     /**

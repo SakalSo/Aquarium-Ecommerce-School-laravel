@@ -82,13 +82,14 @@ class ProductController extends Controller
         $categoryId = $request->input('category');
 
         $path     = $image->store('public/image/product');
+
         $category = Category::find($categoryId);
 
         $newProduct = new Product([
             'product_name' => $name,
-            'cost' => rand(pow(10, 4-1), pow(10, 4)-1) / 100,
-            'price' => rand(pow(10, 4-1), pow(10, 4)-1) / 100,
-            'image' => $path,
+            'cost' => $cost,
+            'price' => $price,
+            'image' => str_replace("public/", "storage/", $path),
         ]);
 
         $res = $category->products()->save($newProduct);
@@ -157,7 +158,7 @@ class ProductController extends Controller
         }
         if ($request->file('image')) {
             $path = $request->file('image')->store('public/image/product');
-            $product->image = $path;
+            $product->image =  str_replace("public/", "storage/", $path);
         }
 
 

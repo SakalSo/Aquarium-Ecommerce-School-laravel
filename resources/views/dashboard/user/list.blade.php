@@ -58,7 +58,7 @@ $nameSort = app('request')->input('name-sort');
                         @endif
                     </td>
                     <td class="d-flex">
-                        <a class="text-dark mr-1" href="{{ url('dashboard/staff/edit', ['id' => $staff->staff_id]) }}"><i
+                        <a class="text-dark mr-1" href="{{ action('Dashboard\DashboardController@edit', ['id' => $staff->staff_id]) }}"><i
                                 class="fas fa-edit"></i></a>
                         <form action="{{ action('Dashboard\DashboardController@destroy', ['id' => $staff->staff_id]) }}" method="POST">
                             @csrf
