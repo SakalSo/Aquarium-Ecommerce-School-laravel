@@ -1,0 +1,74 @@
+/* Nav Advertisement Bar CSS */
+.header-nav-container {
+    width: 92.5% ;
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-header-block {
+    width: 50% ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: left;
+    color: white;
+    text-align: center;
+    background-color: #7f3f97 ;
+}
+
+.nav-header-block > h5,
+.nav-header-block > span{
+    letter-spacing: 1.2px;
+}
+
+.nav-header-block > h5{
+    font-weight: normal;
+}
+
+.nav-header-block > a{
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-header-icon {
+    width: 25px;
+    height: 18px;
+    padding-bottom: 3px;
+}
+
+@media(max-width:520px){
+    .nav-header-block > h5{
+        font-size: 15px !important;
+    }
+    .nav-header-block > span{
+        font-size: 13px !important;
+    }
+}
+@media(max-width:520px){
+    .nav-header-block > h5{
+        font-size: 15px !important;
+    }
+    .nav-header-block > span{
+        font-size: 13px !important;
+    }
+    .nav-header-block >h5.m-auto{
+        line-height: 1.5em;
+        margin-top: none !important;
+    }
+}
+@media(max-width:775px){
+    .nav-header-block >h5.m-auto{
+        line-height: 1.6em;
+        margin-top: -4.5px !important;
+    }
+}
+/* Navbar Menu CSS */
+
+.navbar-menu{
+    width: 92.5% !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    background-color: #F7F7F7;
+}

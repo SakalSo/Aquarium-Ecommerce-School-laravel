@@ -1,0 +1,54 @@
+/* slick slider arrow */
+.slick-prev:before,
+.slick-next:before {
+    color: black !important;
+}
+.slick-prev,
+.slick-next{
+    z-index: 99;
+}
+.slick-prev{
+    left: -10px !important;
+}
+.slick-next{
+    right: -10px !important;
+}
+
+.card-deck {
+    margin: 0 -15px;
+    justify-content: space-between;
+}
+
+.card-deck .card-wrapper {
+    margin: 0 0 1rem;
+    -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+}
+
+.card-deck .card-wrapper .card {
+    margin: 0 auto;
+    height: 100%;
+}
+
+@media (max-width: 576px) {
+    .card-deck .card-wrapper .card {
+        margin: 0 auto;
+        height: 100%;
+        width: 80%;
+    }
+}
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .card-deck .card-wrapper {
+        -ms-flex: 0 0 48.7%;
+        flex: 0 0 48.7%;
+    }
+}
+
+
+@media (min-width: 992px)
+{
+    .card-deck .card-wrapper {
+        -ms-flex: 0 0 24%;
+        flex: 0 0 24%;
+    }
+}

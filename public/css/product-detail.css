@@ -1,0 +1,47 @@
+.detail-container {
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.5);
+}
+.detail-container .product {
+    position: relative;
+}
+.detail-container .product .color span {
+    padding-top: 6px;
+    margin: 2px;
+}
+.detail-container .product .color span:hover {
+    transition: all 0.2s linear;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.5);
+}
+.detail-container .product button {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.detail-container .detail {
+    background: #0a5061;
+}
+.detail-container .detail .desc {
+    position: relative;
+}
+.detail-container .detail .desc div {
+    position: absolute;
+    right: 10%;
+    font-size: 15px;
+    color: black;
+}
+.detail-container .detail .price {
+    font-size: 25px;
+    font-weight: 600;
+}
+.detail-container .detail .fa-share-square-o {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    color: white;
+}
+body {
+    background: -o-linear-gradient(0deg, #1ea982, #1ea982);
+    background: -webkit-linear-gradient(0deg, #1e7080, #1ea982);
+}
